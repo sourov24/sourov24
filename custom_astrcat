@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int astrcat (char *t, char *s)
+{
+    int i = 0, j = 0;
+    
+    while (t[i] != '\0')
+    {
+        i++;
+    }
+    
+    while (s[j] != '\0')
+    {
+        t[i++] = s[j++];
+    }
+}
+
+int main()
+{
+    char fisrt[] = "Good";
+    char second[] = " work!";
+    
+    astrcat(fisrt, second);
+    
+    printf ("%s\n", fisrt);
+}
